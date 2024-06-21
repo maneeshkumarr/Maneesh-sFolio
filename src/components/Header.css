@@ -1,0 +1,36 @@
+/* Header.css */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.manish-div{
+  font-size: 1.9rem;
+  margin-top: 25px;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: end;
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+  margin-top: -40px;
+}
+
+.navbar button:hover {
+  background: #555;
+}

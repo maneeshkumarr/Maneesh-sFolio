@@ -1,0 +1,78 @@
+/* ReviewCard.css */
+
+.message-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #509e81;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards; /* Fade-in animation */
+  transition: transform 5s;
+  filter: drop-shadow(1px 3px 22px black);
+ border-radius: 15px;
+ gap: 20px;
+}
+.message-card:hover{
+  transform: scale(1.03);
+}
+
+.rew{
+  margin-top: 10px;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.stars {
+  font-size: 32px;
+  margin-bottom: 20px;
+
+}
+
+.stars .star {
+  cursor: pointer;
+  color: #ffffff;
+  transition: transform 0.2s ease;
+ 
+}
+
+.stars .star:hover {
+  transform: scale(1.2); /* Scale up on hover */
+}
+
+.stars .rated {
+  color: #fff200; /* Color for rated stars */
+}
+
+
+
+button {
+  padding: 10px 24px;
+  background-color: #f32626;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius:50px;
+}
+
+button:hover {
+  background-color: #2dff08;
+  transform: scale(1.1); /* Scale up on hover */
+}
