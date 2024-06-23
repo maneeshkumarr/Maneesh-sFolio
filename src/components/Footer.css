@@ -1,3 +1,4 @@
+/* Footer.css */
 .foot-section {
   background-color: #000; /* Black background */
   padding: 20px 0;
@@ -82,4 +83,80 @@
 .footer-copy {
   font-size: 14px;
   color: #aaa;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .social-links {
+    gap: 10px;
+  }
+  .footer-links a {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+  }
+  .contact-info {
+    gap: 15px;
+  }
+  .social-links {
+    gap: 8px;
+  }
+  .social-link {
+    font-size: 22px;
+  }
+  .footer-links a {
+    margin: 0 3px;
+    font-size: 14px;
+  }
+  .network-icons {
+    gap: 8px;
+  }
+  .network-icon {
+    font-size: 18px;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-info {
+    gap: 10px;
+  }
+  .contact-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-links {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .social-link {
+    font-size: 20px;
+  }
+  .footer-links {
+    margin-bottom: 10px;
+  }
+  .footer-links a {
+    margin: 0 2px;
+    font-size: 12px;
+  }
+  .network-icons {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .network-icon {
+    font-size: 16px;
+    padding: 3px 6px;
+  }
+  .footer-copy {
+    font-size: 12px;
+  }
 }

@@ -3,7 +3,7 @@
 /* Style for Projects section */
 #projects {
   padding: 20px;
-  background-color:rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 /* Style for project containers */
@@ -12,10 +12,8 @@
   flex-direction: column; /* Ensure items stack vertically */
   align-items: center; /* Center items horizontally */
   margin-bottom: 30px;
-  
- 
   padding: 20px;
-  background-color:rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 /* Style for project titles */
@@ -29,20 +27,20 @@
 .carousell {
   display: flex;
   overflow-x: auto;
-  width: 1000px;
-  height: 500px;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
   border-radius: 30px;
   border: 3px solid #000000;
   filter: drop-shadow(2px 4px 22px yellow);
-   /* Adjust as necessary */
 }
 
+/* Style for carousel images */
 .carousel img {
   width: 200px; /* Set a fixed width for the images */
   height: auto;
   object-fit: cover;
-  margin-right: 10px;
- /* Optional: add margin between images */
+  margin-right: 10px; /* Optional: add margin between images */
 }
 
 /* Style for project descriptions */
@@ -72,4 +70,72 @@
   background-color: #0056b3;
   transform: translateY(-1px); /* Lift on hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .carousell {
+    max-width: 800px;
+  }
+
+  .carousel img {
+    width: 150px;
+  }
+
+  .project h3 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousell {
+    max-width: 600px;
+  }
+
+  .carousel img {
+    width: 120px;
+  }
+
+  .project h3 {
+    font-size: 20px;
+  }
+
+  .project p {
+    font-size: 15px;
+  }
+
+  .project a {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  #projects {
+    padding: 10px;
+  }
+
+  .carousell {
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .carousel img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 10px auto;
+  }
+
+  .project h3 {
+    font-size: 18px;
+  }
+
+  .project p {
+    font-size: 14px;
+  }
+
+  .project a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
 }

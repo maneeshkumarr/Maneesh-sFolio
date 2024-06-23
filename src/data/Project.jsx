@@ -20,7 +20,7 @@ export default function Project() {
       <h2>Projects</h2>
 
       <div className="project">
-        <h3>Project 1</h3>
+        <h3>Wedding Event Management Webiste</h3>
         <div className="carousell">
           <img src={img1} alt="Project 1 Slide 1" />
           <img src={img2} alt="Project 1 Slide 2" />
@@ -34,9 +34,9 @@ export default function Project() {
           <img src={img10} alt="Project 1 Slide 3" />
           <img src={img11} alt="Project 1 Slide 3" />
         </div>
-        <p>Description of project 1.</p>
+        <p>A-z Wedding Event Management</p>
         <a href="https://project1website.com" target="_blank" rel="noopener noreferrer">
-          Visit Project 1 Website
+          Visit our  Website...
         </a>
       </div>
 

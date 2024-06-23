@@ -3,6 +3,7 @@
 .home-container {
   display: flex;
   height: 100vh;
+  flex-wrap: wrap; /* Allow wrapping of child elements */
 }
 
 .left-side {
@@ -17,6 +18,7 @@
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+  padding: 20px;
 }
 
 .text-container {
@@ -62,7 +64,7 @@
   align-items: center;
   overflow: hidden;
   margin-top: -70px;
-  
+  padding: 20px;
 }
 
 .profile-pic {
@@ -77,12 +79,10 @@
   filter: drop-shadow(2px 3px 21px rgb(0, 0, 0));
   animation: fadeInDown 6s ease forwards;
   transition: transform 0.5s ease, opacity 0.5s ease;
- 
 }
 
 .profile-pic:hover {
   transform: scale(1.1);
-  
 }
 
 /* Trendy animation for text */
@@ -109,18 +109,88 @@
   }
 }
 
-/* Additional hover effect for profile picture */
-.this,.man{
-display: flex;
-justify-content: center;
+.this, .man {
+  display: flex;
+  justify-content: center;
 }
-.web{
+
+.web {
   display: flex;
   margin-left: 80px;
-  margin-top: -54px; 
+  margin-top: -54px;
 }
-.coding-icon{
+
+.coding-icon {
   width: 60px;
   height: 50px;
   margin-left: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .home-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-side {
+    border-radius: 0;
+    box-shadow: none;
+    padding: 40px 20px;
+    order: 2; /* Move to bottom on smaller screens */
+  }
+
+  .right-side {
+    order: 1; /* Move to top on smaller screens */
+    margin-top: 0;
+    padding: 20px;
+  }
+
+  .text {
+    font-size: 28px;
+  }
+
+  .additional-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text {
+    font-size: 24px;
+  }
+
+  .additional-text {
+    font-size: 16px;
+  }
+
+  .profile-pic {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .text {
+    font-size: 20px;
+  }
+
+  .additional-text {
+    font-size: 14px;
+  }
+
+  .profile-pic {
+    max-width: 80%;
+  }
+
+  .web {
+    margin-left: 0;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coding-icon {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }

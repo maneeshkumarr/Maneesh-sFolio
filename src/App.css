@@ -1,6 +1,22 @@
 /* App.css */
+
 .content {
   max-height: calc(100vh - 100px); /* Adjust height as needed */
-  padding-top: 60px; 
+  padding-top: 60px;
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds viewport */
+}
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .content {
+    padding-top: 120px; /* Increase padding on smaller screens to accommodate fixed header */
+    max-height: calc(100vh - 120px); /* Adjust max-height accordingly */
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding-top: 140px; /* Further increase padding for very small screens */
+    max-height: calc(100vh - 140px); /* Adjust max-height accordingly */
+  }
 }

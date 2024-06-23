@@ -2,21 +2,27 @@
 .header {
   background-color: #333;
   color: white;
-  padding: 10px 0;
+  padding: 10px 20px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.manish-div{
-  font-size: 1.9rem;
-  margin-top: 25px;
 
+.manish-div {
+  font-size: 1.9rem;
+  margin-left: 20px;
 }
 
 .navbar {
   display: flex;
   justify-content: end;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .navbar button {
@@ -28,9 +34,131 @@
   padding: 10px 20px;
   text-transform: uppercase;
   transition: background 0.3s ease;
-  margin-top: -40px;
+  margin: 0 10px;
 }
 
 .navbar button:hover {
   background: #555;
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+}
+
+.hamburger:hover {
+  background: #555;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #333;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 999;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hamburger-menu a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.hamburger-menu a:hover {
+  background: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .header {
+    padding: 10px 15px;
+  }
+
+  .manish-div {
+    margin-left: 10px;
+  }
+
+  .navbar {
+    justify-content: flex-end;
+    width: auto;
+  }
+
+  .navbar button {
+    padding: 10px 15px;
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  .manish-div {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .navbar {
+    display: none; /* Hide navbar by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 998; /* Ensure hamburger menu overlaps */
+  }
+
+  .navbar.expanded {
+    display: flex; /* Show navbar when expanded */
+  }
+
+  .navbar button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: left;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger icon */
+  }
+}
+
+@media (max-width: 480px) {
+  .manish-div {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }
