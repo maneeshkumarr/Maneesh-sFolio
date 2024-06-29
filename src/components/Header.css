@@ -1,7 +1,7 @@
-/* Header.css */
+/* General Styles */
 .header {
-  background-color: #333;
-  color: white;
+  background-color: #fffeff;
+  color: rgb(0, 0, 0);
   padding: 10px 20px;
   position: fixed;
   width: 100%;
@@ -13,14 +13,13 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.manish-div {
+.brand {
   font-size: 1.9rem;
-  margin-left: 20px;
 }
 
 .navbar {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -28,137 +27,92 @@
 .navbar button {
   background: none;
   border: none;
-  color: white;
+  color: rgb(0, 0, 0);
   cursor: pointer;
   font-size: 16px;
   padding: 10px 20px;
   text-transform: uppercase;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
   margin: 0 10px;
 }
 
 .navbar button:hover {
-  background: #555;
+  background: #5eff00;
+  color: #fff;
 }
 
 /* Hamburger Menu Styling */
 .hamburger {
-  display: none;
+  display: flex;
+
   background: none;
   border: none;
-  color: white;
-  font-size: 24px;
+  color: rgb(0, 0, 0);
+  font-size: 0;
   cursor: pointer;
   padding: 10px;
-  margin: 10px;
+  margin-right: 20px;
+ 
 }
 
 .hamburger:hover {
-  background: #555;
-}
-
-.hamburger-menu {
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: #333;
-  width: 100%;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  z-index: 999;
-  padding: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.hamburger-menu a {
-  color: white;
-  padding: 10px 15px;
-  text-decoration: none;
-  display: block;
-  width: 100%;
-  text-align: left;
-}
-
-.hamburger-menu a:hover {
-  background: #555;
+  background: #3bf33e;
 }
 
 /* Responsive Adjustments */
-@media (max-width: 1024px) {
-  .header {
-    padding: 10px 15px;
-  }
-
-  .manish-div {
-    margin-left: 10px;
-  }
-
-  .navbar {
-    justify-content: flex-end;
-    width: auto;
-  }
-
-  .navbar button {
-    padding: 10px 15px;
-    margin: 0 5px;
-  }
-}
-
 @media (max-width: 768px) {
   .header {
+    padding: 10px 15px;
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px 15px;
-  }
-
-  .manish-div {
-    margin-left: 0;
-    margin-top: 10px;
   }
 
   .navbar {
-    display: none; /* Hide navbar by default */
+    display: none; /* Hide the navbar by default */
     flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
     width: 100%;
-    background-color: #333;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 998; /* Ensure hamburger menu overlaps */
+    background-color: #ffffff;
   }
 
   .navbar.expanded {
-    display: flex; /* Show navbar when expanded */
+    display: flex; /* Show the navbar when expanded */
   }
 
-  .navbar button {
+  .navbar .card {
+    background-color: #444;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(100% - 20px); /* Adjust width to fit within the screen */
+    margin: 10px auto;
+  }
+
+  .navbar .card button {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
     text-align: left;
-  }
-
-  .hamburger {
-    display: block; /* Show hamburger icon */
-  }
-}
-
-@media (max-width: 480px) {
-  .manish-div {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
-  }
-
-  .navbar {
-    display: none;
-  }
-
-  .hamburger-menu {
-    display: none;
+    font-size: 14px;
   }
 
   .hamburger {
     display: block;
   }
+}
+
+@media (max-width: 480px) {
+  .navbar .card button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .hamburger {
+    font-size: 20px;
+    margin-top: -5px;
+  }
+}
+
+/* Content adjustment for expanded menu */
+.expanded + .content {
+  margin-top: 200px; /* Adjust this value based on the navbar height */
 }

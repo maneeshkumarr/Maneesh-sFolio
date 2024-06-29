@@ -13,7 +13,7 @@ const Review = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setDisplayCard(true);
-    }, 10000); // 20 seconds delay
+    }, 10000000); // 20 seconds delay
     return () => clearTimeout(timer);
   }, []); // Empty dependency array ensures this effect runs only once on mount
 

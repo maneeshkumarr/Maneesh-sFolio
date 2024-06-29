@@ -1,4 +1,3 @@
-// Header.js
 import React, { useState } from 'react';
 import './Header.css'; // Import the CSS file for styling
 
@@ -7,6 +6,7 @@ const Header = () => {
 
   const handleScroll = (sectionId) => {
     document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    setExpanded(false); // Collapse the menu after scrolling
   };
 
   const toggleMenu = () => {
@@ -14,18 +14,26 @@ const Header = () => {
   };
 
   return (
-    <header className="header">
-      <div className="manish-div">Maneesh's Folio</div>
-      <nav className={`navbar ${expanded ? 'expanded' : ''}`}>
-        <button onClick={toggleMenu} className="hamburger">&#9776;</button>
-        <button onClick={() => { handleScroll('about'); toggleMenu(); }}>About</button>
-        <button onClick={() => { handleScroll('education'); toggleMenu(); }}>Education</button>
-        <button onClick={() => { handleScroll('skills'); toggleMenu(); }}>Skills</button>
-        <button onClick={() => { handleScroll('projects'); toggleMenu(); }}>Projects</button>
-        <button onClick={() => { handleScroll('certificates'); toggleMenu(); }}>Certificates</button>
-        <button onClick={() => { handleScroll('contact'); toggleMenu(); }}>Contact</button>
-      </nav>
-    </header>
+    <>
+      <header className="header">
+        <div className="brand">Maneesh's Folio</div><br />
+        <button onClick={toggleMenu} className="hamburger">&#9776; </button>
+        <nav className={`navbar ${expanded ? 'expanded' : ''}`}>
+          <div className="card">
+            <button onClick={() => handleScroll('home')}>Home</button>
+            <button onClick={() => handleScroll('about')}>About</button>
+            <button onClick={() => handleScroll('education')}>Education</button>
+            <button onClick={() => handleScroll('skills')}>Skills</button>
+            <button onClick={() => handleScroll('projects')}>Projects</button>
+            <button onClick={() => handleScroll('certificates')}>Certificates</button>
+            <button onClick={() => handleScroll('contact')}>Contact</button>
+          </div>
+        </nav>
+      </header>
+      <div className={`content ${expanded ? 'expanded' : ''}`}>
+        {/* Your page content here */}
+      </div>
+    </>
   );
 };
 

@@ -23,26 +23,6 @@
   text-align: center; /* Center text */
 }
 
-/* Style for carousel */
-.carousell {
-  display: flex;
-  overflow-x: auto;
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
-  border-radius: 30px;
-  border: 3px solid #000000;
-  filter: drop-shadow(2px 4px 22px yellow);
-}
-
-/* Style for carousel images */
-.carousel img {
-  width: 200px; /* Set a fixed width for the images */
-  height: auto;
-  object-fit: cover;
-  margin-right: 10px; /* Optional: add margin between images */
-}
-
 /* Style for project descriptions */
 .project p {
   font-size: 16px;
@@ -72,14 +52,19 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
 }
 
+/* Custom carousel image styles */
+.carousel .slide img {
+  width: 100%;
+  max-width: 600px; /* Adjust the max width for desktop */
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto; /* Center the images */
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
-  .carousell {
-    max-width: 800px;
-  }
-
-  .carousel img {
-    width: 150px;
+  .carousel .slide img {
+    max-width: 500px; /* Adjust the max width for tablets */
   }
 
   .project h3 {
@@ -88,12 +73,8 @@
 }
 
 @media (max-width: 768px) {
-  .carousell {
-    max-width: 600px;
-  }
-
-  .carousel img {
-    width: 120px;
+  .carousel .slide img {
+    max-width: 450px; /* Adjust the max width for large mobile devices */
   }
 
   .project h3 {
@@ -114,16 +95,8 @@
     padding: 10px;
   }
 
-  .carousell {
-    flex-direction: column;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .carousel img {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto 10px auto;
+  .carousel .slide img {
+    max-width: 400px; /* Adjust the max width for small mobile devices */
   }
 
   .project h3 {

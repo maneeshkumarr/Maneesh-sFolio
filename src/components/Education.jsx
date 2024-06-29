@@ -16,7 +16,7 @@ export default function Education() {
           <div className='section-left'>
             <div className='left-text'>
               <h3>PUC Education</h3>
-              <p><strong>College:</strong> VANI Pre University College, Belthangady</p>
+              <p><strong>College:</strong>VANI Pre University College, Belthangady</p>
               <p><strong>Stream:</strong> Science with PCMC (Physics, Chemistry, Mathematics, Computer Science)</p>
               <p><strong>Interests:</strong> Computer Science, Sports</p>
             </div>

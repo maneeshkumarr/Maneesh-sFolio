@@ -12,7 +12,7 @@ export default function Home() {
           <h2 className='this'>This is </h2>
           <h2 className='man'>Maneesh Kumar</h2>
         
-          <img src={codingIcon} alt="Coding Icon" className="coding-icon" />  <p  className='web'>Web Developer</p>
+          <img src={codingIcon} alt="Coding Icon" className="coding-icon" />  <p  className='web'>Passinate IT student</p>
         </div>
       </div>
       <div className="right-side">
