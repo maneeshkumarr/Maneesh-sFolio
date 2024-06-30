@@ -17,20 +17,20 @@ import mysql from '../assets/images/mysql1.png';
 import './Skill.css';
 
 const skills = [
-  { img: html, title: 'HTML', proficiency: 98 },
-  { img: css, title: 'CSS', proficiency: 95 },
-  { img: js, title: 'JavaScript', proficiency: 90 },
-  { img: reactImg, title: 'React', proficiency: 85 },
+  { img: html, title: 'HTML', proficiency: 90 },
+  { img: css, title: 'CSS', proficiency: 90 },
+  { img: js, title: 'JavaScript', proficiency: 70 },
+  { img: reactImg, title: 'React', proficiency: 75 },
   { img: node, title: 'Node.js', proficiency: 80 },
   { img: express, title: 'Express', proficiency: 75 },
-  { img: angular, title: 'Angular', proficiency: 70 },
-  { img: vui, title: 'Vue.js', proficiency: 80 },
-  { img: boot, title: 'Bootstrap', proficiency: 85 },
-  { img: tail, title: 'Tailwind CSS', proficiency: 75 },
-  { img: Py, title: 'Python', proficiency: 90 },
-  { img: java, title: 'Java', proficiency: 85 },
-  { img: php, title: 'PHP', proficiency: 80 },
-  { img: mongo, title: 'MongoDB', proficiency: 70 },
+  { img: angular, title: 'Angular', proficiency: 75 },
+  { img: vui, title: 'Vue.js', proficiency: 50 },
+  { img: boot, title: 'Bootstrap', proficiency: 70 },
+  { img: tail, title: 'Tailwind CSS', proficiency: 50 },
+  { img: Py, title: 'Python', proficiency: 70 },
+  { img: java, title: 'Java', proficiency: 60 },
+  { img: php, title: 'PHP', proficiency: 70 },
+  { img: mongo, title: 'MongoDB', proficiency: 60 },
   { img: mysql, title: 'MySQL', proficiency: 75 }
 ];
 

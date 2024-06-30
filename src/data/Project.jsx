@@ -20,8 +20,29 @@ export default function Project() {
     <section id="projects">
       <h2>Projects</h2>
 
+      
+
       <div className="project">
-        <h3>Wedding Event Management Website</h3>
+        <h3>simple E-commerce Website</h3>
+        <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay>
+          <div>
+            <img src={img4} alt="Project 2 Slide 1" />
+          </div>
+          <div>
+            <img src={img5} alt="Project 2 Slide 2" />
+          </div>
+          <div>
+            <img src={img6} alt="Project 2 Slide 3" />
+          </div>
+        </Carousel>
+        <p>Description of project 2.</p>
+        <a href="https://project2website.com" className="btn" target="_blank" rel="noopener noreferrer">
+          Visit....
+        </a>
+      </div>
+
+      <div className="project">
+        <h3 >Wedding Event Management Website</h3>
         <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay>
           <div>
             <img src={img1} alt="Project 1 Slide 1" />
@@ -58,31 +79,12 @@ export default function Project() {
           </div>
         </Carousel>
         <p>A-z Wedding Event Management</p>
-        <a href="https://project1website.com" target="_blank" rel="noopener noreferrer">
-          Visit our Website...
+        <a href="http://a-zweddingmanagement.vercel.app" target="_blank" rel="noopener noreferrer">
+          Visit ...
         </a>
       </div>
 
-      <div className="project">
-        <h3>Project 2</h3>
-        <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay>
-          <div>
-            <img src={img4} alt="Project 2 Slide 1" />
-          </div>
-          <div>
-            <img src={img5} alt="Project 2 Slide 2" />
-          </div>
-          <div>
-            <img src={img6} alt="Project 2 Slide 3" />
-          </div>
-        </Carousel>
-        <p>Description of project 2.</p>
-        <a href="https://project2website.com" className="btn" target="_blank" rel="noopener noreferrer">
-          Visit Project 2 Website
-        </a>
-      </div>
-
-      {/* Add more projects as needed */}
+      
     </section>
   );
 }

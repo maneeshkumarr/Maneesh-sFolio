@@ -13,6 +13,8 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+
+
 .brand {
   font-size: 1.9rem;
 }
@@ -22,6 +24,7 @@
   justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: -50px;
 }
 
 .navbar button {
@@ -79,7 +82,7 @@
   }
 
   .navbar .card {
-    background-color: #444;
+    background-color: #6682e4;
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;

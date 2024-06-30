@@ -27,7 +27,7 @@ const About = () => {
                                 <li><span>Phone:</span> +918792489207</li>
                             </ul>
                             <p className='oo'>
-                               I'm a Web developer, skilled in HTML, CSS, JavaScript, React, Node.js, and MongoDB.
+                               I'm a passionate IT student, skilled in HTML, CSS, JavaScript, React, Node.js, and MongoDB.
                                 Strong problem-solver, committed to staying updated with industry trends.
                                 Seeking to contribute to innovative projects.
                             </p>
