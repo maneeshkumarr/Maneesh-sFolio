@@ -12,6 +12,12 @@ import img8 from '../assets/images/img8.png';
 import img9 from '../assets/images/img9.png';
 import img10 from '../assets/images/img10.png';
 import img11 from '../assets/images/img11.png';
+import img111 from '../assets/images/img111.png';
+import img22 from '../assets/images/img22.png';
+import img33 from '../assets/images/img33.png';
+import img44 from '../assets/images/img44.png';
+import img55 from '../assets/images/img55.png';
+
 
 import './Project.css'; // Import the CSS file
 
@@ -26,17 +32,24 @@ export default function Project() {
         <h3>simple E-commerce Website</h3>
         <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay>
           <div>
-            <img src={img4} alt="Project 2 Slide 1" />
+            <img src={img111} alt="Project 2 Slide 1" />
           </div>
           <div>
-            <img src={img5} alt="Project 2 Slide 2" />
+            <img src={img22} alt="Project 2 Slide 2" />
           </div>
           <div>
-            <img src={img6} alt="Project 2 Slide 3" />
+            <img src={img33} alt="Project 2 Slide 3" />
           </div>
+          <div>
+            <img src={img44} alt="Project 2 Slide 3" />
+          </div>
+          <div>
+            <img src={img55} alt="Project 2 Slide 2" />
+          </div>
+          
         </Carousel>
         <p>Description of project 2.</p>
-        <a href="https://project2website.com" className="btn" target="_blank" rel="noopener noreferrer">
+        <a href="https://ecommerce-coral-pi.vercel.app" className="btn" target="_blank" rel="noopener noreferrer">
           Visit....
         </a>
       </div>

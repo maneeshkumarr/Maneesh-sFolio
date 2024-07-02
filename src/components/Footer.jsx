@@ -24,15 +24,10 @@ export default function Footer() {
           <a href="https://www.linkedin.com/in/maneesh-kumar-b17787262" target="_blank" rel="noopener noreferrer" className="social-link">
             <FaLinkedin className="social-icon" />
           </a>
-          <a href="https://www.instagram.com/manish_vokkaliga/" target="_blank" rel="noopener noreferrer" className="social-link">
-            <FaInstagram className="social-icon" />
-          </a>
-          <a href="https://github.com/maneeshkumarr" target="_blank" rel="noopener noreferrer" className="social-link">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link">
             <FaGithub className="social-icon" />
           </a>
-          <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-jobseeker-profile--profile-one-frontend" target="_blank" rel="noopener noreferrer" className="social-link">
-            <FaFileAlt className="social-icon" />
-          </a>
+          
           <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer" className="social-link">
             <FaTwitter className="social-icon" />
           </a>
