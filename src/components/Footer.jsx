@@ -24,7 +24,7 @@ export default function Footer() {
           <a href="https://www.linkedin.com/in/maneesh-kumar-b17787262" target="_blank" rel="noopener noreferrer" className="social-link">
             <FaLinkedin className="social-icon" />
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link">
+          <a href="https://github.com/maneeshkumarr/maneeshkumar" target="_blank" rel="noopener noreferrer" className="social-link">
             <FaGithub className="social-icon" />
           </a>
           
